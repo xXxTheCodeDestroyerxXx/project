@@ -1,0 +1,8 @@
+datasources:
+-  access: 'proxy'                      # make grafana perform the requests
+   editable: true                        # whether it should be editable
+   is_default: true                      # whether this should be the default DS
+   name: 'influxdb'                      # name of the datasource
+   type: 'influxdb'                      # type of the data source
+   url: 'http://influxdb:8086'           # url of the prom instance
+   database: telegraf
